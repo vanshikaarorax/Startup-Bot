@@ -1,0 +1,15 @@
+fastapi<1.0,>=0.115
+uvicorn[standard]<1.0,>=0.30
+pydantic<3.0,>=2.7
+pandas<3.0,>=2.2
+python-dotenv<2.0,>=1.0
+langchain-core<1.0,>=0.3
+langchain-openai<1.0,>=0.2
+faiss-cpu<2.0,>=1.8
+
+[dev]
+pytest<9.0,>=8.0
+httpx<1.0,>=0.27
+
+[langfuse]
+langfuse<4.0,>=3.0
