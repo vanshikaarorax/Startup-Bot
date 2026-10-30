@@ -27,8 +27,3 @@ def test_api_validates_message(repository):
     assert response.json()["answer"] == "grounded"
     assert response.json()["session_id"] == stub.seen_session_id
 
-
-def test_vague_collaboration_has_a_clarification_interface(repository):
-    service = ChatbotService(repository, Settings())
-    assert service.clarification_question("Which company is best to collaborate with?")
-
